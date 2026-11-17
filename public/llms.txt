@@ -1,0 +1,39 @@
+# TechHive Solutions
+
+> Software and AI services agency building enterprise-grade digital solutions for businesses in Pakistan and the US. 20+ years of delivery. Certified Odoo Partner and registered Claude Partner Network member. Based in Lahore, Pakistan; serving clients globally.
+
+Contact: info@techhivesolutions.com
+
+## Services
+
+- [AI Integration](https://techhivesolutions.com/services#ai-integration): Embed Anthropic Claude into your applications — document automation, natural-language interfaces, intelligent workflows. Registered Claude Partner Network member.
+- [Odoo ERP](https://techhivesolutions.com/services#odoo-erp): Certified Odoo Partner. Implement, customise and support Odoo across CRM, accounting, POS, inventory, HR, sales and manufacturing.
+- [Web Portals & Apps](https://techhivesolutions.com/services#web-portals): Custom web applications built to exact business logic, from client portals to large-scale SaaS platforms.
+- [Mobile Applications](https://techhivesolutions.com/services#mobile-apps): Native and cross-platform iOS/Android apps, from concept through store deployment and maintenance.
+- [eLearning & LMS](https://techhivesolutions.com/services#elearning-lms): End-to-end learning platforms — LMS integration, virtual classrooms, fee management. Powered by TutorBees, our own live product.
+- [Offshoring](https://techhivesolutions.com/services#offshoring): Dedicated offshore development teams for US and international clients, working your timezone.
+
+## Portfolio
+
+- [MHPSS Pakistan](https://mhpss.pk): Mental health helpline and case management system for the Ministry of Planning's MHPSS initiative, delivered in partnership with UNICEF.
+- [TutorBees](https://tutorbees.net): AI-powered virtual classroom and tutoring marketplace serving thousands of students across Pakistan. Built and owned by TechHive.
+- [Yuksel Seeds Asia](https://techhivesolutions.com/portfolio/yuksel-seeds): Oracle-to-Odoo move for a nationwide hybrid seed business, with seed-to-sale traceability, TCS courier updates, dealer discount batches, approval workflows, biometric attendance linked to payroll, and multi-company setup with Pakistan tax compliance.
+- [Healthy Salt International](https://techhivesolutions.com/portfolio/hsi): Odoo for a salt manufacturer and exporter, replacing spreadsheets with one system and showing the true production cost behind every sale order, including labor.
+- [Next Bridge Real Estate](https://techhivesolutions.com/portfolio/next-bridge): Odoo for a real estate brokerage, with leads from Bayut, Dubizzle, Property Finder, Meta Ads and social media in one pipeline, round-robin assignment, listings synced to every portal, and automatic commission splits.
+
+## Odoo Apps
+
+Odoo modules built and published by TechHive Solutions (a certified Odoo Partner) and sold on the Odoo App Store.
+
+- [MCP Server for AI Agents](https://apps.odoo.com/apps/modules/19.0/th_mcp_server): Connect Claude, ChatGPT and other AI assistants to Odoo over MCP with confirmations, per-key access rules and a full audit trail. $200, OPL-1, Odoo 18 & 19, Odoo.sh or on-premise.
+- [Financial Year Switcher](https://apps.odoo.com/apps/modules/18.0/th_financial_year): Pick the fiscal year in Odoo's top bar, like the company switcher, and hide invoices, orders, transfers and payslips dated outside it by record rules, with an access group for past years and full-history opening balances. $300, OPL-1, Odoo 18, Odoo.sh or on-premise.
+- [Documents Folder Upload](https://apps.odoo.com/apps/modules/19.0/documents_upload_folder): Upload entire local directory structures straight into Odoo Documents, recreating the nested folder tree as sub-workspaces. $35, OPL-1, Odoo 18 & 19, requires Odoo Enterprise.
+
+## Pages
+
+- [Home](https://techhivesolutions.com/): Overview of services, partners and case studies.
+- [Odoo Apps](https://techhivesolutions.com/odoo-apps): Odoo modules TechHive publishes and sells on the Odoo App Store.
+- [Services](https://techhivesolutions.com/services): Full detail on each offering.
+- [Portfolio](https://techhivesolutions.com/portfolio): Client case studies and delivered work.
+- [About](https://techhivesolutions.com/about): Company story, Odoo and Claude partner credentials, industries served, process.
+- [Contact](https://techhivesolutions.com/contact): Get in touch — based in Lahore, Pakistan, serving Pakistan, the US and internationally.

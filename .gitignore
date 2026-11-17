@@ -1,0 +1,24 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+.env
+.nitro
+.tanstack
+.wrangler
+.output
+.vinxi
+__unconfig*
+todos.json
+.pnpm-store
+
+# Generated per-page Open Graph images (built by scripts/generate-og.ts).
+# The Sora .ttf sources in scripts/og-fonts/ ARE committed (build inputs).
+public/og/
+
+# Local libSQL database file(s) used in dev/test
+*.db
+*.db-journal
+*.db-wal
+*.db-shm

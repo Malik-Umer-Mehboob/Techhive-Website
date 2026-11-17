@@ -1,0 +1,38 @@
+//  @ts-check
+
+import { tanstackConfig } from '@tanstack/eslint-config'
+
+export default [
+	...tanstackConfig,
+	{
+		rules: {
+			'import/no-cycle': 'off',
+			'import/order': 'off',
+			'sort-imports': 'off',
+			'@typescript-eslint/array-type': 'off',
+			'@typescript-eslint/require-await': 'off',
+			'pnpm/json-enforce-catalog': 'off',
+		},
+	},
+	{
+		ignores: [
+			'eslint.config.js',
+			'prettier.config.js',
+			'.output',
+			'.nitro',
+			'.tanstack',
+			'dist',
+			'dist-ssr',
+			'src/routeTree.gen.ts',
+			'package-lock.json',
+			'pnpm-lock.yaml',
+			'yarn.lock',
+			'.agents',
+			'.claude',
+			'.vscode',
+			'*.gen.ts',
+			'reference-pages',
+			'.sandcastle',
+		],
+	},
+]

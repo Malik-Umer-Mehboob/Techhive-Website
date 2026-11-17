@@ -1,0 +1,228 @@
+/* ============================================
+   TechHive Solutions - Design tokens & base
+   Direction: Clean white + deep navy + orange accent
+   Type: Inter (body) + Sora (display)
+
+   This file holds DESIGN TOKENS ONLY. Component styling lives in
+   `src/components/ui/*` (shadcn primitives) and Tailwind utilities, never here.
+   To retheme the brand, edit the hex values in the `:root` block below; every
+   utility (bg-navy, text-orange, shadow-brand-md, ...) and primitive updates
+   automatically. See `design-system/MASTER.md`.
+   ============================================ */
+
+@import 'tailwindcss';
+@import '@fontsource/inter/300';
+@import '@fontsource/inter/400';
+@import '@fontsource/inter/500';
+@import '@fontsource/inter/600';
+@import '@fontsource/sora/400';
+@import '@fontsource/sora/600';
+@import '@fontsource/sora/700';
+@import '@fontsource/sora/800';
+@plugin '@tailwindcss/typography';
+
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+	/* -- Brand tokens (single source of truth) -- */
+	--navy: #0a1628;
+	--navy-mid: #112040;
+	--navy-light: #1a3054;
+	--orange: #ff6b2b;
+	--orange-dim: #e55a1c;
+	--orange-pale: #fff0e8;
+	--white: #ffffff;
+	--off-white: #f8f9fb;
+	/* Tag kinds (content/tags.ts). Each text/background pair passes WCAG AA for
+	small text; "partner" sits on --gray-100 (wash), "own" on --orange-pale. */
+	--tag-odoo: #714b67;
+	--tag-odoo-pale: #f4eef3;
+	--tag-technology: #1d4ed8;
+	--tag-technology-pale: #eff4ff;
+	--tag-industry: #067647;
+	--tag-industry-pale: #ecfdf3;
+	--tag-partner: #334155;
+	--tag-own: #b93815;
+	--gray-100: #f1f3f6;
+	--gray-200: #e2e6ed;
+	--gray-400: #9aa3b0;
+	--gray-600: #5c6575;
+	--gray-800: #2d3545;
+	--text: #1a2232;
+	--text-muted: #5c6575;
+
+	--sans: 'Inter', sans-serif;
+	--display: 'Sora', sans-serif;
+
+	--radius-sm: 6px;
+	--radius-md: 12px;
+	--radius-lg: 20px;
+	--radius-xl: 32px;
+
+	--shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.04);
+	--shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08), 0 12px 40px rgba(0, 0, 0, 0.06);
+	--shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.1), 0 24px 64px rgba(0, 0, 0, 0.08);
+
+	--max-w: 1160px;
+	--pad: clamp(1.25rem, 5vw, 3rem);
+	--header-h: 68px;
+
+	/* -- shadcn UI primitive tokens (used by src/components/ui/*) -- */
+	--background: oklch(1 0 0);
+	--foreground: oklch(0.141 0.005 285.823);
+	--card: oklch(1 0 0);
+	--card-foreground: oklch(0.141 0.005 285.823);
+	--popover: oklch(1 0 0);
+	--popover-foreground: oklch(0.141 0.005 285.823);
+	--primary: oklch(0.21 0.006 285.885);
+	--primary-foreground: oklch(0.985 0 0);
+	--secondary: oklch(0.967 0.001 286.375);
+	--secondary-foreground: oklch(0.21 0.006 285.885);
+	--muted: oklch(0.967 0.001 286.375);
+	--muted-foreground: oklch(0.552 0.016 285.938);
+	--accent: oklch(0.967 0.001 286.375);
+	--accent-foreground: oklch(0.21 0.006 285.885);
+	--destructive: oklch(0.577 0.245 27.325);
+	--destructive-foreground: oklch(0.577 0.245 27.325);
+	--border: oklch(0.92 0.004 286.32);
+	--input: oklch(0.92 0.004 286.32);
+	--ring: oklch(0.871 0.006 286.286);
+	--radius: 0.625rem;
+}
+
+.dark {
+	--background: oklch(0.141 0.005 285.823);
+	--foreground: oklch(0.985 0 0);
+	--card: oklch(0.141 0.005 285.823);
+	--card-foreground: oklch(0.985 0 0);
+	--popover: oklch(0.141 0.005 285.823);
+	--popover-foreground: oklch(0.985 0 0);
+	--primary: oklch(0.985 0 0);
+	--primary-foreground: oklch(0.21 0.006 285.885);
+	--secondary: oklch(0.274 0.006 286.033);
+	--secondary-foreground: oklch(0.985 0 0);
+	--muted: oklch(0.274 0.006 286.033);
+	--muted-foreground: oklch(0.705 0.015 286.067);
+	--accent: oklch(0.274 0.006 286.033);
+	--accent-foreground: oklch(0.985 0 0);
+	--destructive: oklch(0.396 0.141 25.723);
+	--destructive-foreground: oklch(0.637 0.237 25.331);
+	--border: oklch(0.274 0.006 286.033);
+	--input: oklch(0.274 0.006 286.033);
+	--ring: oklch(0.442 0.017 285.786);
+}
+
+@theme inline {
+	/* -- Fonts -- */
+	--font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+	--font-display: 'Sora', ui-sans-serif, system-ui, sans-serif;
+
+	/* -- Brand colors as utilities (bg-navy, text-orange, border-hairline, ...) -- */
+	--color-navy: var(--navy);
+	--color-navy-mid: var(--navy-mid);
+	--color-navy-light: var(--navy-light);
+	--color-orange: var(--orange);
+	--color-orange-dim: var(--orange-dim);
+	--color-orange-pale: var(--orange-pale);
+	--color-off-white: var(--off-white);
+	--color-tag-odoo: var(--tag-odoo);
+	--color-tag-odoo-pale: var(--tag-odoo-pale);
+	--color-tag-technology: var(--tag-technology);
+	--color-tag-technology-pale: var(--tag-technology-pale);
+	--color-tag-industry: var(--tag-industry);
+	--color-tag-industry-pale: var(--tag-industry-pale);
+	--color-tag-partner: var(--tag-partner);
+	--color-tag-own: var(--tag-own);
+	--color-ink: var(--text); /* body text #1a2232 */
+	--color-ink-muted: var(--text-muted); /* #5c6575 */
+	--color-hairline: var(--gray-200); /* default border #e2e6ed */
+	--color-wash: var(--gray-100); /* subtle fill / hover #f1f3f6 */
+	--color-faint: var(--gray-400); /* #9aa3b0 */
+
+	/* -- Brand radii as utilities (rounded-brand-md, ...) -- */
+	--radius-brand-sm: var(--radius-sm); /* 6px */
+	--radius-brand-md: var(--radius-md); /* 12px */
+	--radius-brand-lg: var(--radius-lg); /* 20px */
+	--radius-brand-xl: var(--radius-xl); /* 32px */
+
+	/* -- Brand shadows as utilities (shadow-brand-md, ...) -- */
+	--shadow-brand-sm: var(--shadow-sm);
+	--shadow-brand-md: var(--shadow-md);
+	--shadow-brand-lg: var(--shadow-lg);
+
+	/* -- shadcn primitive tokens -- */
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-card: var(--card);
+	--color-card-foreground: var(--card-foreground);
+	--color-popover: var(--popover);
+	--color-popover-foreground: var(--popover-foreground);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+	--color-secondary: var(--secondary);
+	--color-secondary-foreground: var(--secondary-foreground);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-accent: var(--accent);
+	--color-accent-foreground: var(--accent-foreground);
+	--color-destructive: var(--destructive);
+	--color-destructive-foreground: var(--destructive-foreground);
+	--color-border: var(--border);
+	--color-input: var(--input);
+	--color-ring: var(--ring);
+	--radius-shadcn-sm: calc(var(--radius) - 4px);
+	--radius-shadcn-md: calc(var(--radius) - 2px);
+	--radius-shadcn-lg: var(--radius);
+	--radius-shadcn-xl: calc(var(--radius) + 4px);
+
+	--animate-marquee: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+/* -- Reset & base --
+   Layered into `base` so Tailwind utilities (text-white, text-orange, ...) win
+   over these element selectors. Unlayered, `a { color: inherit }` would beat
+   every color utility on <a>/<Link> buttons. */
+@layer base {
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		font-family: var(--sans);
+		color: var(--text);
+		background: var(--white);
+		line-height: 1.7;
+		font-size: 16px;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+	}
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation: none !important;
+	}
+}

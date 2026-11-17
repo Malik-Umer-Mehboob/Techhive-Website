@@ -1,0 +1,17 @@
+allowBuilds:
+  better-sqlite3: true
+  esbuild: true
+  unrs-resolver: true
+minimumReleaseAgeExclude:
+  - nitro-nightly@3.0.1-20260617-160837-7765bcb7
+overrides:
+  brace-expansion@1: ^1.1.21
+  brace-expansion@>=3: ^5.0.12
+  js-yaml@4: ^4.3.2
+  undici@7: ^7.30.1
+  browserslist@4: ^4.28.7
+  source-map-js@1: ^1.2.2
+  baseline-browser-mapping@2: ^2.11.0
+  postcss-selector-parser@6: ^6.1.5
+  postcss@8: ^8.5.23
+  esbuild@<0.25: ^0.25.12

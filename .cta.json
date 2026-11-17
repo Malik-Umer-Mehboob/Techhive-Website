@@ -1,0 +1,27 @@
+{
+	"projectName": "techhive-website",
+	"mode": "file-router",
+	"typescript": true,
+	"packageManager": "npm",
+	"includeExamples": false,
+	"tailwind": true,
+	"addOnOptions": {
+		"drizzle": {
+			"database": "sqlite"
+		}
+	},
+	"envVarValues": {},
+	"git": true,
+	"install": true,
+	"routerOnly": false,
+	"version": 1,
+	"framework": "react",
+	"chosenAddOns": [
+		"eslint",
+		"nitro",
+		"tanstack-query",
+		"shadcn",
+		"drizzle",
+		"form"
+	]
+}
